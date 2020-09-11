@@ -29,7 +29,8 @@
                 </div>
                 <div class="col-md-4 col-xl-2 ">
                    <!-- <a href="#reserveForm"></a><button type="button" class="btn btn-primary mt-4">Reserve Campsite</button></a>-->
-                    <a class="btn btn-primary mt-4 ml-5 " href="#reserveForm" role="button">Reserve Campsite</a>
+                    <a class="btn btn-primary mt-4 ml-5 " href="#reserveForm" role="button" data-toggle="tooltip" title="Or call us at <br /><strong>1-206-555-1234</strong>"
+                     data-html="true" data-placement="bottom">Reserve Campsite</a>
 
                 </div>    
             </div>
@@ -192,6 +193,16 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+
+
+
 </body>
 
 </html>
